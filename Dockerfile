@@ -2,7 +2,6 @@ FROM phusion/passenger-ruby22
 ENV HOME /root
 WORKDIR /home/app
 ADD Gemfile /home/app/Gemfile
-ADD Gemfile.lock /home/app/Gemfile.lock
 RUN bundle install
 ADD . /home/app
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

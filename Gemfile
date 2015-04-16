@@ -33,6 +33,12 @@ gem 'puma'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'delayed_job_active_record'
+# first time you need run this:
+# rake db:migrate
+gem 'dj_mon', :git => 'git://github.com/akshayrawat/dj_mon.git'
+
+
 gem 'foreman'
 
 gem 'i18n'
