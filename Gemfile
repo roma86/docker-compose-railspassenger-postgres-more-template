@@ -49,8 +49,9 @@ group :development, :test do
   gem 'minitest-reporters'
   gem 'guard' # NOTE: this is necessary in newer versions
   gem 'guard-minitest'
+  # create test db and migrate. run:
   # bundle exec guard
-  
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
